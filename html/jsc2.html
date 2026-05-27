@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+    <style>
+         <style>
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(255, 127, 227);
+            border-radius: 10px;
+            cursor:pointer ;
+        }
+        button:hover{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <button id="btn_saludar">saludar</button>
+    <button  id="btn_holaa">saludar</button>
+    <p id="saludo">hola</p>
+
+    <script>
+        const boton = document.getElementById
+        ("btn_saludar"); 
+        const saludo= document.getElementById("saludo");
+        const boton_hola= document.getElementById("btn_holaa");
+
+        boton.addEventListener("click",function(){
+        
+            saludo.textContent="holaa";
+           
+        }) 
+        
+        boton_hola.addEventListener("click",function(){
+            saludo.textContent="Chau";
+        })
+
+    </script>
+    
+</body>
+    
+
+</html>
